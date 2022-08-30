@@ -1,0 +1,111 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family:'Poppins', sans-serif; font-size: 16px;}
+
+:root{
+
+/*### Primary*/
+--Red: hsl(0, 100%, 74%);
+--Green: hsl(154, 59%, 51%);
+
+/*### Accent*/
+--Blue: hsl(248, 32%, 49%);
+
+/* Neutral*/
+--DarkBlue: hsl(249, 10%, 26%);
+--GrayishBlue: hsl(246, 25%, 77%);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background: var(--Red);
+    background-image: url(images/bg-intro-mobile.png);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: clamp(375px, 100%, 940px);;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(360px,1fr));
+    align-items: center;
+}
+
+.conteiner{
+    color: #fff;
+    
+    margin: 1rem 0 0;
+    padding:  0 1.5rem;
+
+    text-align: center;
+}
+
+.conteiner h1{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.conteiner p{
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.conteiner__ofert{   
+
+    background-color: var(--Blue);
+    border: none;
+    border-radius: 10px;
+
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+
+    box-shadow: 0px 10px 0px 0px rgba(0,0,0,0.20);
+}
+
+.contenier__form{
+    background-color: #fff;
+    border-radius: 15px;
+
+    padding: 15px;
+}
+
+.contenier__form input, .contenier__form button{
+    width: 100%;
+    font-weight: 600;
+
+    border: var(--GrayishBlue) solid 1px;
+    border-radius: 10px;
+
+    color: var(--GrayishBlue);
+
+    margin: 15px 0;
+    padding: 16px;
+}
+
+.contenier__form button{
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--Green);
+    box-shadow: inset -2px -15px 0px -10px rgba(40,184,122,1);
+}
+
+form .form--text {
+    margin: 0 10px;
+    
+    color: var(--GrayishBlue)
+}
+
+
+
+.contenier__form p strong{
+    color: var(--Red);
+}
+
+footer{
+    margin: 10px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
